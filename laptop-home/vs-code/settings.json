@@ -1,0 +1,115 @@
+{
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+      "editor.fontSize": 13,
+      "editor.fontFamily": "'Fira Code', 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Font Awesome 5 Free Solid'",
+      "terminal.integrated.fastScrollSensitivity": 2,
+      "terminal.integrated.fontSize": 13,
+      "workbench.iconTheme": "material-icon-theme",
+      "files.autoSave": "off",
+      "editor.wordWrap": "on",
+      "html.format.wrapLineLength": 80,
+      "editor.minimap.enabled": true,
+      "breadcrumbs.enabled": true,
+      "editor.fontWeight": "600",
+      "editor.fontLigatures": true,
+      "terminal.integrated.fontWeight": "600",
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": false,
+      "editor.tabSize": 2,
+      "workbench.colorCustomizations": {},
+      "editor.hover.enabled": true,
+      "bracketPairColorizer.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5"
+      ],
+      "vim.easymotion": true,
+      "vim.leader": "<space>",
+      "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<C-n>"],
+          "commands": [":nohl"]
+        },
+        {
+          "before": ["leader", "f", "s"],
+          "commands": ["workbench.action.files.save"]
+        },
+        {
+          "before": ["leader", "b", "S"],
+          "commands": ["workbench.action.files.saveAll"] 
+        },
+        {
+          "before": ["leader", "b", "d"],
+          "commands": [":q"]
+        },
+        {
+          "before": ["leader", "s", "d"],
+          "commands": ["editor.action.showHover"]
+        },
+        {
+          "before": ["<C-f>"],
+          "commands": ["actions.find"]
+        },
+        {
+          "before": ["<C-b>"],
+          "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+          "before": ["<C-e>"],
+          "commands": ["cursorEnd"]
+        },
+        {
+          "before": ["leader", "d", "c"],
+          "commands": ["workbench.action.debug.continue"]
+        },
+        {
+          "before": ["leader", "d", "s"],
+          "commands": ["workbench.action.debug.stepOver"]
+        },
+        {
+          "before": ["leader", "m", "j", "l"],
+          "commands": ["console.log.wrap.down.prefix"]
+        },
+        {
+          "before": ["s"],
+          "after": ["<esc>"]
+        }
+      ],
+      "vim.insertModeKeyBindings": [
+        {
+          "before": ["<C-e>"],
+          "commands": ["cursorEnd"]
+        },
+        {
+          "before": ["j", "k"],
+          "after": ["<Esc>"]
+        },
+      ],
+      "terminal.integrated.shell.linux": "/bin/zsh",
+      "window.titleBarStyle": "custom",
+      "explorer.confirmDelete": false,
+      "[rust]": { 
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust",
+      },
+      "[javascript]": { 
+        "editor.formatOnSave": true,
+      },
+      "[elixir]": {
+        "editor.formatOnSave": true,
+      },
+      "debug.allowBreakpointsEverywhere": true,
+      "workbench.colorTheme": "Gruvbox Dark Hard",
+      "bracketPairColorizer.depreciation-notice": false,
+      "editor.parameterHints.enabled": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "window.customMenuBarAltFocus": false,
+      "elixirLS.fetchDeps": true,
+      "editor.suggest.shareSuggestSelections": true,
+      "editor.suggestSelection": "recentlyUsed",
+      "elixirLS.mixEnv": "dev",
+      "bracket-pair-colorizer-2.depreciation-notice": false,
+      "window.zoomLevel": 1,
+      "terminal.external.linuxExec": "kitty"
+  }

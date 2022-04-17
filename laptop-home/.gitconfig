@@ -1,0 +1,9 @@
+[user]
+    email = surenkirakosyan.am@gmail.com
+    name = Suren Kirakosyan
+[gitlab]
+    user = Sur.en
+[core]
+    editor = nvim
+[init]
+    defaultBranch = master

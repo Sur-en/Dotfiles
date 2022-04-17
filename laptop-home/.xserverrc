@@ -1,0 +1,5 @@
+#!/bin/sh
+exec /usr/bin/X -nolisten tcp "$@"
+
+exec /bin/sh /etc/X11/xinit/xserverrc -ardelay 100 -arinterval 10
+
