@@ -273,3 +273,7 @@ exec --no-startup-id nitrogen --set-auto ~/Images/Wallpapers/mountains-moon-tree
 # Disable and enable one click
 bindsym $alt+e exec --no-startup-id synclient TapButton1=1
 bindsym $alt+r exec --no-startup-id synclient TapButton1=0
+
+#### WORKSPACE ####
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
