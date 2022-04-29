@@ -223,7 +223,7 @@ new_window none
 #### KEYBOARD ####
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
 exec --no-startup-id xset r rate 250 30 # Set initial delay 300ms, repeat 35ms
-bindsym Shift+space exec ~/.local/bin/change-keyboards.sh
+bindsym Ctrl+space exec ~/.local/bin/change-keyboards.sh
 
 #Print Screen
 bindsym Print exec /usr/bin/flameshot gui
