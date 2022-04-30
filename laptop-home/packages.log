@@ -1,3 +1,81 @@
 27.04.2022
 _ pacman -R xf86-video-ati
 _ pacman -R xf86-video-amdgpu
+
+30.04.2022
+_ pacman -S gnome baobab cheese eog epiphany evince file-roller gdm gedit gnome-backgrounds gnome-books gnome-calculator gnome-calendar   gnome-characters gnome-clocks gnome-color-manager gnome-contacts gnome-control-center gnome-disk-utility gnome-font-viewer gnome-keyring   gnome-logs gnome-maps gnome-menus gnome-music gnome-photos gnome-remote-desktop gnome-session gnome-settings-daemon gnome-shell  gnome-shell-extensions gnome-software gnome-system-monitor gnome-terminal gnome-user-docs gnome-user-share gnome-video-effects gnome-weather  grilo-plugins gvfs gvfs-afc gvfs-goa gvfs-google gvfs-gphoto gvfs-mtp gvfs-nfs gvfs-smb mutter nautilus orca rygel  sushi totem tracker tracker-miners tracker-miners vino xdg-user-dirs-gtk yelp  gnome-boxes simple-scan
+warning: gnome-keyring is up to date -- reinstalling
+warning: gvfs-1.50.1-1 is up to date -- reinstalling
+warning: nautilus-42.1.1-1 is up to date -- reinstalling
+warning: tracker3-miners-3.3.0-2 is up to date -- reinstalling
+resolving dependencies...
+:: There are 2 providers available for pipewire-session-manager:
+:: Repository extra
+   1) pipewire-media-session  2) wireplumber
+Enter a number (default=1):
+:: There are 2 providers available for emoji-font:
+:: Repository extra
+   1) noto-fonts-emoji
+:: Repository community
+   2) ttf-joypixels
+Enter a number (default=1):
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: cifs-utils will be installed before its smbclient dependency
+
+aalib abseil-cpp accountsservice alsa-card-profiles alsa-plugins apache appstream apr
+apr-util babl bolt brltty cdparanoia cdrtools chromaprint cifs-utils clutter
+clutter-gst clutter-gtk cogl colord colord-gtk-common colord-gtk colord-sane
+cracklib cups-pk-helper dbus-glib dbus-python djvulibre dleyna-connector-dbus dleyna-core
+dleyna-renderer dleyna-server dotconf dtc edk2-ovmf evolution-data-server faac faad
+fluidsynth folks freerdp frei0r-plugins gavl gegl geoclue geocode-glib gfbgraph
+ghostscript gjs gmime gnome-bluetooth gnome-desktop gnome-epub-thumbnailer
+gnome-online-accounts gom grilo gsfonts gsound gspell gssdp gst-editing-services
+gst-plugin-gtk gst-plugin-pipewire gst-plugins-bad gst-plugins-base gst-plugins-good
+gtk-vnc gtksourceview4 gtksourceview5 gupnp gupnp-av gupnp-igd ijs imath jasper jbig2dec
+js91 ldb lensfun libadwaita libao libavtp libbs2b libbsd libcaca libcacard
+libchamplain libcheese libdazzle libdc1394 libdca libdmapsharing libdv libdvdnav libdvdread
+libfdk-aac libfreeaptx libgdata libgdm libgee libgepub libgme libgnomekbd
+libgphoto2 libgssglue libgtop libgusb libgweather libidn libieee1284 libinstpatch
+libkate libldac liblouis liblrdf libltc libmd libmediaart libmicrodns libmpcdec
+libmtp libnfs libnice libnma-gtk4 liboauth libopenmpt libpackagekit-glib
+libpaper libpeas libphonenumber libpwquality libraw libshout libslirp libspectre
+libspeechd libspiro libsrtp libsynctex liburing libvirt libvirt-glib libvisual
+libvncserver libxklavier libxmlb lilv lmdb lua lv2 metis mjpegtools mod_dnssd mpg123
+neon net-snmp noto-fonts-emoji numactl openal openexr pcsclite phodav pipewire
+pipewire-media-session portaudio protobuf pulseaudio-alsa python-atspi python-cairo
+python-pyxdg qemu qrencode raptor rtmpdump run-parts sane sdl_image seabios
+serd shared-color-targets smbclient sord soundtouch spandsp speech-dispatcher spice
+spice-gtk sratom suitesparse svt-hevc taglib talloc telepathy-glib tevent twolame
+usbredir vde2 virglrenderer vte-common vte3 wavpack webkit2gtk wildmidi xdg-user-dirs
+yelp-xsl zbar zenity zvbi zxing-cpp baobab cheese eog epiphany evince file-roller
+gdm gedit gnome-backgrounds gnome-books gnome-boxes gnome-calculator
+gnome-calendar gnome-characters gnome-clocks gnome-color-manager
+gnome-contacts gnome-control-center gnome-disk-utility gnome-font-viewer
+gnome-keyring gnome-logs gnome-maps gnome-menus gnome-music gnome-photos
+gnome-remote-desktop gnome-session gnome-settings-daemon gnome-shell
+gnome-shell-extensions gnome-software gnome-system-monitor gnome-terminal
+gnome-user-docs gnome-user-share gnome-video-effects gnome-weather grilo-plugins gvfs
+gvfs-afc gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb mutter nautilus
+orca rygel simple-scan sushi totem tracker tracker-miners tracker-miners
+vino xdg-user-dirs-gtk yelp
+
+error: target not found: edk-ovmf
+error: target not found: freir-plugins
+error: target not found: geocode-glib-+r+gda
+warning: gnome-desktop-1:42.0-1 is up to date -- reinstalling
+error: target not found: gtksourceview
+error: target not found: gtksourceview
+error: target not found: libbsb
+error: target not found: libcaca-beta
+error: target not found: libdc
+error: target not found: libgphoto
+error: target not found: libieee
+error: target not found: libnma-gtk
+error: target not found: lv
+error: target not found: metis-p
+error: target not found: mpg
+error: target not found: rtmpdump-rfbc
+error: target not found: vde
+error: target not found: vte
+error: target not found: webkitgtk
