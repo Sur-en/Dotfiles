@@ -221,7 +221,6 @@ for_window [class="^.*"] border pixel 2
 new_window none
 
 #### KEYBOARD ####
-exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
 exec --no-startup-id xset r rate 250 30 # Set initial delay 300ms, repeat 35ms
 bindsym Ctrl+space exec ~/.local/bin/change-keyboards.sh
 
@@ -232,8 +231,7 @@ bindsym Print exec /usr/bin/flameshot gui
 exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 exec --no-startup-id autotiling
 # exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
-exec_always --no-startup-id ~/.config/i3/i3-chrome-tab-dragging.py # joni google tabs
-#exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 144
+# exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 144
 
 # AUDIO AND SOUND
 bindsym $alt+s exec playerctl play-pause
@@ -251,12 +249,12 @@ bindsym XF86MonBrightnessUp exec --no-startup-id pkexec brillo -A 5 && $refresh_
 bindsym XF86MonBrightnessDown exec --no-startup-id pkexec brillo -U 5 && $refresh_i3status
 
 #### ROFI ####
-bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+w exec --no-startup-id rofi -show window
-bindsym $mod+b exec --no-startup-id rofi -show filebrowser
-#bindsym $mod+m exec --no-startup-id rofi-music
-bindsym $mod+n exec --no-startup-id ~/.local/bin/rofi-network
-bindsym $mod+Shift+n exec --no-startup-id ~/.local/bin/rofi-wifi-menu.sh
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+w exec rofi -show window
+bindsym $mod+b exec rofi -show filebrowser
+#bindsym $mod+m-no-s exec -tartup-id rofi-music
+bindsym $mod+n exec ~/.local/bin/rofi-network
+bindsym $mod+Shift+n exec ~/.local/bin/rofi-wifi-menu.sh
 
 #### NOTIFY ####
 exec --no-startup-id dunst

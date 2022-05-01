@@ -205,7 +205,7 @@ ws-icon-default = 
 ;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
 ;   <label-mode> (default)
 format = <label-state><label-mode>
-format-background = "#30e6a6"
+format-background =
 
 ; Available tokens:
 ;   %mode%
@@ -223,7 +223,7 @@ label-mode-foreground = ${color.BGL}
 ; Default: %icon%  %name%
 label-focused = %icon%  %name%
 label-focused-foreground = "#6fad6f"
-label-focused-background = "#30e6a6"
+label-focused-background =
 
 ; Available tokens:
 ;   %name%
@@ -233,7 +233,7 @@ label-focused-background = "#30e6a6"
 ; Default: %icon%  %name%
 label-unfocused = %icon%  %name%
 label-unfocused-foreground = ${color.FG}
-label-unfocused-background = "#2a2af7"
+label-unfocused-background =
 
 ; Available tokens:
 ;   %name%
@@ -243,7 +243,7 @@ label-unfocused-background = "#2a2af7"
 ; Default: %icon%  %name%
 label-visible = %icon%
 label-visible-foreground = ${color.RED}
-label-visible-background = "#513754"
+label-visible-background =
 
 ; Available tokens:
 ;   %name%
@@ -253,7 +253,7 @@ label-visible-background = "#513754"
 ; Default: %icon%  %name%
 label-urgent = %icon%
 label-urgent-foreground = ${color.RED}
-label-urgent-background = "#a66fad"
+label-urgent-background =
 
 ; Paddings
 label-focused-padding = 2
