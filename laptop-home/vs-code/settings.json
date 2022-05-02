@@ -1,6 +1,6 @@
 {
   "editor.fontSize": 13,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "'Fira Code', 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Font Awesome 5 Free Solid'",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fastScrollSensitivity": 2,
   "terminal.integrated.fontSize": 13,
@@ -22,13 +22,35 @@
   "html.format.wrapLineLength": 80,
   "[javascript]": { 
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "eslint.alwaysShowStatus": true,
   "[elixir]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "elixirLS.fetchDeps": true,
   "elixirLS.mixEnv": "dev",
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "javascript.suggest.autoImports": false,
+  "javascript.validate.enable": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.wordBasedSuggestions": true,
   "debug.allowBreakpointsEverywhere": true,
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "editor.parameterHints.enabled": false,
@@ -108,6 +130,15 @@
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
-    },
-  ]
+    }
+  ],
+  "editor.parameterHints": false,
+  "bracketPairColorizer.depreciation-notice": false,
+  "workbench.editorAssociations": {
+    "*.pdf": "pdf.preview"
+  },
+  "window.zoomLevel": 1,
+  "editor.renderFinalNewline": false,
+  "files.trimFinalNewlines": true,
+  "path-intellisense.extensionOnImport": true
 }
