@@ -134,7 +134,7 @@ font-3 = "Iosevka Nerd Font:bold:size=12;4"
 # Alternate
 modules-left = i3
 modules-center = xwindow
-modules-right = volume brightness battery network cpu memory temperature date xkeyboard
+modules-right = date ethernet memory cpu temperature brightness battery xkeyboard volume
 
 ; The separator will be inserted between the output of each module
 separator =
