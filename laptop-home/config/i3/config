@@ -196,7 +196,7 @@ bindsym $mod+Print mode "$mode_system"
 
 # Shortcuts to start application
 #bindsym $mod+w exec --no-startup-id chromium
-bindsym $mod+Ctrl+w workspace 2; exec /usr/bin/google-chrome-beta
+bindsym $mod+Ctrl+w workspace 2; exec /usr/bin/google-chrome-stable
 bindsym $mod+Ctrl+t workspace 4; exec /usr/bin/telegram-desktop
 bindsym $mod+Ctrl+d workspace 4; exec /usr/bin/discord
 bindsym $mod+Ctrl+h exec --no-startup-id kitty -e htop
@@ -205,7 +205,7 @@ bindsym $mod+Ctrl+s exec --no-startup-id kitty -e watch inxi -s
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/kitty'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-beta'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
 exec --no-startup-id i3-msg; systemctl --user start imwheel
 
 # Popups during fullscreen mode
@@ -229,9 +229,8 @@ bindsym Print exec /usr/bin/flameshot gui
 
 # autostart
 exec_always --no-startup-id sh ~/.config/polybar/launch.sh
+exec_always --no-startup-id sh ~/.local/bin/disable-touchpad.sh
 exec --no-startup-id autotiling
-# exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
-# exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 144
 
 # AUDIO AND SOUND
 bindsym $alt+s exec playerctl play-pause
@@ -265,12 +264,14 @@ bindsym $mod+x exec betterlockscreen -l blur
 exec xautolock -time 10 -locker "xset dpms force off" -notify 300 -notifier "betterlockscreen -l"
 
 ### WALLPAPERS ####
-exec --no-startup-id nitrogen --set-auto ~/Images/Wallpapers/mountains-moon-trees-minimalism-hd.jpg
+exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/wp5123161.jpg
 
 #### TOUCHPAD ####
 # Disable and enable one click
 bindsym $alt+e exec --no-startup-id synclient TapButton1=1
 bindsym $alt+r exec --no-startup-id synclient TapButton1=0
+bindsym $alt+Shift+e exec --no-startup-id synclient TouchpadOff=0
+bindsym $alt+Shift+d exec --no-startup-id synclient TouchpadOff=1
 
 #### WORKSPACE ####
 bindsym $mod+Tab workspace next
