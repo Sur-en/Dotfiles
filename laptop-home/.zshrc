@@ -21,17 +21,17 @@ export ZSH="$HOME/.oh-my-zsh"
 export MYVIMRC="$XDG_CONFIG_HOME/nvim/init.vim"
 
 # EDITOR
-  export EDITOR="/usr/bin/vim" 
+  export EDITOR="/usr/bin/vim"
 
 # Elixir
 # iex history
   export ERL_AFLAGS="-kernel shell_history enabled"
 
 # FD - FZF
-  # Setting fd as the default source for fzf  
+  # Setting fd as the default source for fzf
   #export FZF_DEFAULT_COMMAND='fd --type f'
   # To apply the command to CTRL-T as well
-  
+
   #export FZF_BASE="/usr/bin/fzf"
 
   export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git -E '*.jpg' -E '*.exe' -E '*.vim' -E '*.rb' -E '*.ttf' -E '*.docx' -E '*.xz' -E '*.gz' -E '*.log' -E '*.zsh' -E '*.ch' -E '*.crate' -E '*.mak' -E '*.spec' -E '*.vader' -E '*.snip' -E '*.tiff' -E '*.s' -E '*.pl' -E '*.beam' -E '*.cpp' -E '*.py' -E '*.c' -E '*.h' -E '*.hpp' -E '*.png' -E '*.so' -E '*.dll' -E '*.zip' -E '*.svn' -E 'doc' -E 'usr' -E 'bin' -E 'tmp' -E 'node_modules' -E 'deps'"
@@ -176,6 +176,7 @@ fi
 plugins=(
   git
   fzf
+	notify
   #history-substring-search
 )
 
