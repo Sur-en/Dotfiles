@@ -229,7 +229,6 @@ bindsym Print exec /usr/bin/flameshot gui
 
 # autostart
 exec_always --no-startup-id sh ~/.config/polybar/launch.sh
-exec_always --no-startup-id sh ~/.local/bin/disable-touchpad.sh
 exec --no-startup-id autotiling
 
 # AUDIO AND SOUND
@@ -270,8 +269,8 @@ exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/wp5123161.jpg
 # Disable and enable one click
 bindsym $alt+e exec --no-startup-id synclient TapButton1=1
 bindsym $alt+r exec --no-startup-id synclient TapButton1=0
-bindsym $alt+Shift+e exec --no-startup-id synclient TouchpadOff=0
-bindsym $alt+Shift+d exec --no-startup-id synclient TouchpadOff=1
+bindsym $alt+Shift+e exec --no-startup-id sh ~/.local/bin/enable-touchpad.sh
+bindsym $alt+Shift+d exec --no-startup-id sh ~/.local/bin/disable-touchpad.sh
 
 #### WORKSPACE ####
 bindsym $mod+Tab workspace next

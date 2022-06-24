@@ -1,3 +1,2 @@
-if [ $(ls /dev/input | grep mouse | wc -l) -gt 1 ]; then
-  synclient TouchpadOff=1
-fi
+synclient TouchpadOff=1
+systemctl --user start imwheel.service
